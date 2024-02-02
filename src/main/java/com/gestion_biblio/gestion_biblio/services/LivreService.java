@@ -65,6 +65,7 @@ public class LivreService {
         livre.setAuteur(livreDto.getAuteur());
         livre.setDatePublication(livreDto.getDatePublication());
         livre.setIsbn(livreDto.getIsbn());
+        livre.setImg(livreDto.getImg());
 
         if (livreDto.getCategoryId() != null) {
             Categories category = categoriesRepository.findById(livreDto.getCategoryId())

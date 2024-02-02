@@ -8,6 +8,7 @@ public class LivreDto {
     private String auteur;
     private Date datePublication;
     private String isbn;
+    private String img ;
     private Integer categoryId;
 
     // Constructors, getters, and setters
@@ -15,11 +16,12 @@ public class LivreDto {
     public LivreDto() {
     }
 
-    public LivreDto(String titre, String auteur, Date datePublication, String isbn, Integer categoryId) {
+    public LivreDto(String titre, String auteur, Date datePublication, String isbn, Integer categoryId,String img) {
         this.titre = titre;
         this.auteur = auteur;
         this.datePublication = datePublication;
         this.isbn = isbn;
+        this.img= img ;
         this.categoryId = categoryId;
     }
 
@@ -56,6 +58,13 @@ public class LivreDto {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+    public String getImg() {
+            return img;
+        }
+    
+        public void setImg(String img) {
+            this.img = img;
+        }
 
     public Integer getCategoryId() {
         return categoryId;
